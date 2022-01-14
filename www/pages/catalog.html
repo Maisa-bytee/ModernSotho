@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <template>
   <div class="page" data-name="catalog">
     <div class="navbar">
@@ -16,7 +17,7 @@
       </div>
       ${products.value.length === 3 && $h`
         <div class="block">
-          <button class="button button-fill" @click=${addProduct}>Add Product</Button>
+          <button class="button button-fill" @click="${addProduct}">Add Product</button>
         </div>
       `}
     </div>
